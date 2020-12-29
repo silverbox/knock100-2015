@@ -1,0 +1,91 @@
+●標準デモの結果
+ubuntu@ubuntu:~/ginza/word2vec$ ./compute-accuracy vectors.bin  < questions-words.txt
+capital-common-countries:
+ACCURACY TOP1: 78.66 %  (398 / 506)
+Total accuracy: 78.66 %   Semantic accuracy: 78.66 %   Syntactic accuracy: -nan %
+capital-world:
+ACCURACY TOP1: 48.04 %  (1712 / 3564)
+Total accuracy: 51.84 %   Semantic accuracy: 51.84 %   Syntactic accuracy: -nan %
+currency:
+ACCURACY TOP1: 21.14 %  (126 / 596)
+Total accuracy: 47.92 %   Semantic accuracy: 47.92 %   Syntactic accuracy: -nan %
+city-in-state:
+ACCURACY TOP1: 45.41 %  (1058 / 2330)
+Total accuracy: 47.08 %   Semantic accuracy: 47.08 %   Syntactic accuracy: -nan %
+family:
+ACCURACY TOP1: 59.05 %  (248 / 420)
+Total accuracy: 47.76 %   Semantic accuracy: 47.76 %   Syntactic accuracy: -nan %
+gram1-adjective-to-adverb:
+ACCURACY TOP1: 13.21 %  (131 / 992)
+Total accuracy: 43.68 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 13.21 %
+gram2-opposite:
+ACCURACY TOP1: 12.70 %  (96 / 756)
+Total accuracy: 41.13 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 12.99 %
+gram3-comparative:
+ACCURACY TOP1: 64.11 %  (854 / 1332)
+Total accuracy: 44.05 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 35.10 %
+gram4-superlative:
+ACCURACY TOP1: 25.10 %  (249 / 992)
+Total accuracy: 42.41 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 32.66 %
+gram5-present-participle:
+ACCURACY TOP1: 35.89 %  (379 / 1056)
+Total accuracy: 41.86 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 33.33 %
+gram6-nationality-adjective:
+ACCURACY TOP1: 76.59 %  (1165 / 1521)
+Total accuracy: 45.62 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 43.22 %
+gram7-past-tense:
+ACCURACY TOP1: 33.91 %  (529 / 1560)
+Total accuracy: 44.45 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 41.45 %
+gram8-plural:
+ACCURACY TOP1: 53.08 %  (707 / 1332)
+Total accuracy: 45.13 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 43.08 %
+gram9-plural-verbs:
+ACCURACY TOP1: 28.74 %  (250 / 870)
+Total accuracy: 44.33 %   Semantic accuracy: 47.76 %   Syntactic accuracy: 41.88 %
+Questions seen / total: 17827 19544   91.21 %
+
+●作ったモデルでのチェック
+ubuntu@ubuntu:~/ginza/word2vec$ ./compute-accuracy vectors-90s1.bin  < questions-words.txt
+capital-common-countries:
+ACCURACY TOP1: 92.69 %  (469 / 506)
+Total accuracy: 92.69 %   Semantic accuracy: 92.69 %   Syntactic accuracy: -nan %
+capital-world:
+ACCURACY TOP1: 63.48 %  (2872 / 4524)
+Total accuracy: 66.42 %   Semantic accuracy: 66.42 %   Syntactic accuracy: -nan %
+currency:
+ACCURACY TOP1: 8.78 %  (66 / 752)
+Total accuracy: 58.92 %   Semantic accuracy: 58.92 %   Syntactic accuracy: -nan %
+city-in-state:
+ACCURACY TOP1: 70.49 %  (1739 / 2467)
+Total accuracy: 62.38 %   Semantic accuracy: 62.38 %   Syntactic accuracy: -nan %
+family:
+ACCURACY TOP1: 73.52 %  (372 / 506)
+Total accuracy: 63.03 %   Semantic accuracy: 63.03 %   Syntactic accuracy: -nan %
+gram1-adjective-to-adverb:
+ACCURACY TOP1: 18.85 %  (187 / 992)
+Total accuracy: 58.53 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 18.85 %
+gram2-opposite:
+ACCURACY TOP1: 17.49 %  (142 / 812)
+Total accuracy: 55.37 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 18.24 %
+gram3-comparative:
+ACCURACY TOP1: 74.55 %  (993 / 1332)
+Total accuracy: 57.52 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 42.16 %
+gram4-superlative:
+ACCURACY TOP1: 34.38 %  (363 / 1056)
+Total accuracy: 55.63 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 40.20 %
+gram5-present-participle:
+ACCURACY TOP1: 50.95 %  (538 / 1056)
+Total accuracy: 55.28 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 42.36 %
+gram6-nationality-adjective:
+ACCURACY TOP1: 83.11 %  (1329 / 1599)
+Total accuracy: 58.13 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 51.88 %
+gram7-past-tense:
+ACCURACY TOP1: 61.60 %  (961 / 1560)
+Total accuracy: 58.45 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 53.68 %
+gram8-plural:
+ACCURACY TOP1: 63.14 %  (841 / 1332)
+Total accuracy: 58.79 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 54.97 %
+gram9-plural-verbs:
+ACCURACY TOP1: 47.47 %  (413 / 870)
+Total accuracy: 58.28 %   Semantic accuracy: 63.03 %   Syntactic accuracy: 54.36 %
+Questions seen / total: 19364 19544   99.08 %

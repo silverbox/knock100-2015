@@ -1,0 +1,98 @@
+sudo apt-get install python3-venv
+sudo apt-get install libhdf5-serial-dev
+
+pip install tensorflow==1.4.0
+pip install keras==2.1.2
+pip3 install --no-cache-dir h5py
+
+●Keras
+python3 -m venv keras
+source keras/bin/activate
+cd ~/keras
+
+●GINZA
+python3 -m venv ginza
+source /home/ubuntu/ginza/bin/activate
+cd ~/ginza
+
+pip install "https://github.com/megagonlabs/ginza/releases/download/latest/ginza-latest.tar.gz"
+
+●word2vec
+python3 -m venv word2vec
+source /home/ubuntu/word2vec/bin/activate
+cd ~/word2vec
+deactivate
+
+$ git clone https://github.com/svn2github/word2vec.git
+$ cd word2vec/
+$ make
+
+●mecab
+sudo apt install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file swig
+sudo apt-get install mecab libmecab-dev mecab-ipadic mecab-ipadic-utf8
+git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+cd mecab-ipadic-neologd
+sudo ./bin/install-mecab-ipadic-neologd -n -a
+
+https://qiita.com/Sak1361/items/47e9ec464ccc770cd65c
+
+[install-mecab-ipadic-NEologd] : Usage of mecab-ipadic-NEologd is here.
+Usage:
+    $ mecab -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd ...
+
+
+mecab -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd neko.txt neko.txt.mecab
+
+●pyplot
+pip install matplotlib
+sudo apt install python3-tk
+pip install japanize-matplotlib
+
+●CaboCha
+# https://qiita.com/namakemono/items/f6aa6043998a13323a86
+# https://syo-takasaki.hatenadiary.org/entry/20090528/1243484754
+https://qiita.com/Sylba2050/items/4aaff94769726b8c9581
+
+/etc/apt/sources.list
+
+●Graphviz
+https://programgenjin.hatenablog.com/entry/2019/02/26/075121
+sudo apt install linuxbrew-wrapper
+brew install graphviz
+pip install graphviz
+
+sudo apt-get install graphviz
+
+●nltk
+pip install nltk
+
+●scipy
+pip install scipy
+
+●sklearn
+pip install scikit-learn
+
+●gensim
+pip install gensim
+pip install nmslib
+
+●bhtsne
+pip install bhtsne
+pip install MulticoreTSNE
+
+●swap
+free -m
+sudo fallocate -l 10G /swapfile2
+sudo chmod 600 /swapfile2
+sudo mkswap /swapfile2
+sudo swapon /swapfile2
+
+sudo swapoff /swapfile2
+sudo rm /swapfile2
+
+(ginza) ubuntu@ubuntu:~/ginza$ python3 knock100_chapter9.py 
+matrix_x Shape: (680584, 597678)
+matrix_x Number of non-zero entries: 3436452
+matrix_x Format: csc
+
+
